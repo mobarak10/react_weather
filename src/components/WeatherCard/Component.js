@@ -1,5 +1,6 @@
 import React from "react";
 import styled from '@emotion/styled';
+import Location from './Location'
 
 const WeatherCard = (props) => {
 
@@ -17,7 +18,8 @@ const WeatherCard = (props) => {
     `
 
     return ( 
-        <Card className="card">
+        <Card>
+            <Location />
             <img className="icon" src="./img/cloudy_icon.png" alt="Weather Card"/>
             <h1 className="temp">20 °C</h1>
             <h3 className="condition">Clouds</h3>
